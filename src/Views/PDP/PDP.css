@@ -1,0 +1,45 @@
+.PDP {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+/* IMAGE CAROUSEL */
+.imagesCarousel {
+  // display: flex;
+  // width: 500px;
+  flex: 1 1 auto;
+  height: 500px;
+  margin-top: 70px;
+  background-color: black;
+}
+
+.imagesNav {
+  height: 100%;
+  width: 120px;
+  background-color: white;
+}
+
+.image {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  margin-bottom: 15px;
+  height: 110px;
+  width: 90px;
+  background-color: red;
+}
+
+/* PRODUCT INFO */
+.productInfo {
+  //display: flex;
+  //width: 450px;
+  flex: 1 1 auto;
+  height: 700px;
+  margin-top: 70px;
+  background-color: aquamarine;
+}
+
+
