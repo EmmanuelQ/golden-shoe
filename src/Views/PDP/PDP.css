@@ -10,16 +10,27 @@
 .imagesCarousel {
   // display: flex;
   // width: 500px;
-  flex: 1 1 auto;
+  margin-left: 110px;
+  //flex: 1 1 auto;
   height: 500px;
-  margin-top: 70px;
-  background-color: black;
+  margin-top: 50px;
+}
+
+.focusImg {
+  position: relative;
+  display: inline-block;
+  height: 90%;
+  width: auto;
+  cursor: pointer;
 }
 
 .imagesNav {
+  display: inline-block;
+  float: left;
   height: 100%;
   width: 120px;
   background-color: white;
+  cursor: pointer;
 }
 
 .image {
@@ -29,7 +40,6 @@
   margin-bottom: 15px;
   height: 110px;
   width: 90px;
-  background-color: red;
 }
 
 /* PRODUCT INFO */
@@ -37,9 +47,203 @@
   //display: flex;
   //width: 450px;
   flex: 1 1 auto;
-  height: 700px;
-  margin-top: 70px;
-  background-color: aquamarine;
+  height: 600px;
+  margin-top: 50px;
+  margin-right: 25px;
+  font-family: Chronicle Display A,Chronicle Display B,Times New Roman,serif;
+  line-height: 1.42857;
+}
+.productInfo h1, .productInfo p, .productInfo a {
+  margin-left: 50px; 
+}
+.productInfo p {
+  font-size: 13px;
+  font-family: Helvetica,Arial,sans-serif;
 }
 
+.sizeContainer {
+  //display: inline;
+  list-style-type: none;
+}
+
+.sizeContainer li {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+  list-style-type: none;
+  height: 50px;
+  width: 65px;
+  //line-height: 50px;
+  text-align: center;
+  border: 1px solid #e5e6e8;
+}
+.sizeContainer li:hover {
+  background-color: #952f28;
+  color: white;
+}
+
+.outOfStock span {
+  //display: block;
+  /* text-align: center;
+  font-size: 10px;
+  line-height: 1px;
+  color: grey; */
+  
+  /* margin-top: 3px;
+font-size: .8em; */
+}
+.outOfStockTxt {
+  display: block;
+  margin-top: 3px;
+  font-size: .7em;
+}
+.quantityContainer {
+  margin-left: 50px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #e5e6e8;
+}
+.quantityMinus {
+  position: absolute;
+  width: 25px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-right: 1px solid #e5e6e8;
+  cursor: pointer;
+}
+.quantityPlus {
+  position: absolute;
+  width: 25px;
+  height: 50px;
+  margin-left: 124px;
+  line-height: 50px;
+  text-align: center;
+  border-left: 1px solid #e5e6e8;
+  cursor: pointer;
+}
+.quantityPlus:hover {
+  background-color: #fafafa;
+}
+.quantityMinus:hover {
+  background-color: #fafafa;
+}
+.quantityTxt {
+  position: absolute;
+  width: 99px;
+  height: 50px;
+  margin-left: 26px;
+  padding: unset;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+.buyBtn {
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 50px;
+  background-color: #006fbb;
+  width: 260px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  font-family: Helvetica,Arial,sans-serif;
+}
+.buyBtn:hover {
+  background-color: #1e92e3;
+}
+
+.policies {
+  padding: unset;
+  margin-left: 50px;
+  list-style-type: none;
+}
+
+.policies li {
+  list-style-type: none;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .imagesCarousel {
+    height: 465px;
+    width: 400px;
+  }
+  .imagesNav {
+    display: inline;
+    float: unset;
+  }
+  .image {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .imagesCarousel {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 90%;
+    top: 50px;
+    // margin-left: unset;
+  }
+  .focusImg {
+    width: 100%;
+  }
+  .productInfo {
+    position: absolute;
+    margin-right: unset;
+    width: 100%;
+  }
+  .image {
+    height: 100px;
+    width: auto
+  }
+  .title {
+    margin-top: -50px;
+  }
+  .price {
+    margin-top: 580px;
+  }
+  .productInfo p, .productInfo a {
+    margin-left: 5%; 
+    font-size: 15px;
+  }
+  .sizeContainer {
+    margin-left: 5%;
+    -webkit-padding-start: unset;
+  }
+  .buyBtn {
+    width: 95%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+  }
+  .quantityContainer {
+    width: 95%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .quantityMinus {
+    width: 70px;
+    left: 10px;
+  }
+  .quantityPlus {
+    width: 70px;
+    right: 10px;
+  }
+  .quantityTxt {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .policies {
+    margin-left: 5%;
+  }
+}
 
